@@ -135,6 +135,20 @@ h1 {
 }
 
 
+.about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.about-us img {
+    min-width: 300px;
+}
 
 
 
@@ -191,45 +205,7 @@ h1 {
 
 
 
-.ourBusiness {
-    height: 65vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-.topUnderline {
-    background-color: black;
-    height: 6px;
-    width: 23.5%;
-}
-.textBusiness {
-    width: 50%;
-    margin-left: 4em;
-    line-height: 2.8;
-    background-color: rgba(140,140,140,.4);
-    /* border-radius: 10px; */
-    padding: 40px 30px;
-}
-.textBusiness h2 {
-    margin-top: -.7em;
-    font-size: 2.2em;
-}
-.leftTextBusiness {
-    margin-bottom: 2em;
-    line-height: 2;
-}
-.rightTextBusiness {
-    text-align: right;
-    margin-top: 2em;
-    line-height: 2;
-}
-.businessImage {
-    margin-left: 8em;
-    margin-right: 2em;
-}
-.businessImage img {
-    width: 600px;
-}
+
 
 
 
@@ -559,94 +535,32 @@ footer a {
 }
 
 
-@media (max-width: 2800px) {
-    .ourBusiness {
-       margin-left: 16em; 
-    }
-}
-@media (max-width: 2150px) {
-    .ourBusiness {
-        margin-left: 8em;
-    }
-}
-@media (max-width: 1950px) {
-    .ourBusiness {
-        margin-left: 4em;
-    }
-}
-@media (max-width: 1870px) {
-    .topUnderline {
-        width: 24.5%;
-    }
-}
+
+
 
 @media (max-width: 1830px) {
-    .ourBusiness {
-        margin-left: 4em;
-    }
-    .businessImage {
-        margin-right: 1em;
-    }
-    .textBusiness {
-        width: 45%;
-        
-    }
     .ourServicesTopText {
         width: 10%;
     }
     .ourServicesTopUnderline {
         margin-left: 50px;
     }
-    .topUnderline {
-        width: 25.5%;
-    }
 }
-@media (max-width: 1760px) {
-    .topUnderline {
-        width: 26.5%;
-    }
-}
+
 @media (max-width: 1700px) {
     .ourServicesTopUnderline {
         margin-left: 40px;
     }
-    .topUnderline {
-        width: 27.5%;
-    }
-    .textBusiness {
-        margin-left: 0;
-    }
 }
-@media (max-width: 1640px) {
-    .topUnderline {
-        width: 29%;
-    }
-}
+
 @media (max-width: 1600px) {
-    .topUnderline {
-        width: 31.5%;
-    }
     .ourServicesContent {
         width: 90%;
     }
-    .businessImage img {
-        width: 500px;
-    }
 }
 @media (max-width: 1550px) {
-    .topUnderline {
-        width: 33.5%;
-    }
-    .textBusiness {
-        margin-left: 2em;
-    }
     .ourServicesTopUnderline {
         margin-left: 30px;
-    }
-}
-@media (max-width: 1500px) {
-    .topUnderline {
-        width: 35%;
     }
 }
 @media (max-width: 1470px) {
@@ -657,25 +571,10 @@ footer a {
         margin-left: 50px;
     }
 }
-@media (max-width: 1430px) {
-    .topUnderline {
-        width: 36.5%;
-    }
-    .ourBusiness h2 {
-        margin-bottom: -1em;
-    }
-}
-@media (max-width: 1400px) {
-    .topUnderline {
-        width: 38%;
-    }
-}
+
 @media (max-width: 1365px) {
     .ourServicesTopUnderline {
         margin-left: 45px;
-    }
-    .topUnderline {
-        width: 40%;
     }
 }
 @media (max-width: 1330px) {
@@ -685,9 +584,6 @@ footer a {
     }
     .gallery img:hover {
         width: 420px;
-    }
-    .topUnderline {
-        width: 44%;
     }
 }
 @media (max-width: 1300px) {
@@ -700,17 +596,6 @@ footer a {
     }
 }
 @media (max-width: 1290px) {
-    .topUnderline {
-        width: 46.5%;
-    }
-    .textBusiness {
-        width: 50%;
-        margin-left: -1em;
-    }
-    .businessImage img {
-        width: 450px;
-        margin-right: 1em;
-    }
     .gallery img {
         width: 380px;
     }
@@ -745,35 +630,11 @@ footer a {
     .gallery img:hover {
         width: 370px;
     }
-    .ourBusiness {
-        flex-direction: column;
-        height: auto;
-        margin-left: 0;
-    }
-    .textBusiness {
-        width: 80%;
-        margin-top: 2em;
-        margin-bottom: 2em;
-    }
-    .businessImage {
-        margin-bottom: 2em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .businessImage img {
-        margin: 0;
-    }
-    .topUnderline {
-        width: 25%;
-    }
     .serviceDescription {
         font-size: .8em;
     }
     .serviceName {
         font-size: 1.3em;
-    }
-    .quickLinks {
-        right: 50px;
     }
 }
 @media (max-width: 1150px) {
@@ -793,9 +654,6 @@ footer a {
     }
     .gallery img:hover {
         width: 330px;
-    }
-    .topUnderline {
-        width: 27.5%;
     }
 }
 @media (max-width: 1050px) {
@@ -855,9 +713,6 @@ footer a {
     .gallery img:hover {
         width: 300px;
     }
-    .topUnderline {
-        width: 29.5%;
-    }
     .ourServicesTopUnderline {
         margin-left: 35px;
     }
@@ -903,9 +758,6 @@ footer a {
     }
     h1 {
         margin-top: 1.5em;
-    }
-    .ourBusiness {
-        margin-left: 1.7em;
     }
 }
 
@@ -986,9 +838,6 @@ footer a {
     .ourServicesTopText {
         width: 23%;
     }
-    .ourBusiness {
-        margin-left: 0;
-    }
 }
 
 @media (max-width: 700px) {
@@ -1005,9 +854,6 @@ footer a {
     }
 }
 @media (max-width: 640px) {
-    .ourBusiness {
-        margin-left: 1em;
-    }
     .ourServicesTopText {
         width: 25%;
     }
@@ -1052,12 +898,6 @@ footer a {
     .column2 {
         margin-left: 1em;
     }
-    .ourBusiness img {
-        width: 400px;
-    }
-    .ourBusiness p {
-        line-height: 1.5;
-    }
 }
 @media (max-width: 540px) {
     h1 {
@@ -1065,12 +905,6 @@ footer a {
     }
 }
 @media (max-width: 500px) {
-    .ourBusiness {
-        margin-left: 1em;
-    }
-    .ourBusiness img {
-        width: 350px;
-    }
     .extraContainer {
         margin-top: 8em;
     }
@@ -1094,12 +928,6 @@ footer a {
         font-size: 2.5em;
         margin-top: 2em;
     }
-    .ourBusiness {
-        margin-left: 15px;
-    }
-    .ourBusiness img {
-        margin-left: -10px;
-    }
 }
 @media (max-width: 450px) {
     .ourServicesTopText {
@@ -1111,13 +939,6 @@ footer a {
     }
     .leftSide a {
         margin-left: .7em;
-    }
-    .leftTextBusiness {
-        width: 95%;
-        /* margin: 0; */
-    }
-    .rightTextBusiness {
-        width: 95%;
     }
 }
 @media (max-width: 430px) {
@@ -1156,9 +977,6 @@ footer a {
     }
 }
 @media (max-width: 420px) {
-    .ourBusiness img {
-        width: 300px;
-    }
     .testimonials {
         margin-bottom: 2em;
     }
@@ -1190,9 +1008,6 @@ footer a {
     main {
         /* height: 70vh; */
     }
-    .ourBusiness img {
-        width: 275px;
-    }
     .extraContainer {
         margin-top: 6em;
     }
@@ -1204,16 +1019,8 @@ footer a {
     .ourServicesTopText {
         width: 50%;
     }
-    .textBusiness p {
-        margin-left: 0;
-        margin-right: 0;
-    }
 }
 @media (max-width: 350px) {
-    .quickLinks {
-        right: 5%;
-        margin-top: 125%;
-    }
     #logo {
         width: 200px;
     }
@@ -1232,13 +1039,6 @@ footer a {
 @media (max-width: 330px) {
     footer {
         font-size: 0.8em;
-    }
-    .textBusiness {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-    .ourBusiness img {
-        width: 250px;
     }
 }
 @media (max-width: 320px) {
@@ -1269,14 +1069,8 @@ footer a {
         margin-top: 30px;
         font-size: .8em;
     }
-    .ourBusiness img {
-        width: 250px;
-    }
 }
 @media (max-width: 310px) {
-    .ourBusiness h2 {
-        font-size: 2em;
-    }
     h1 {
         margin-top: 3em;
     }
