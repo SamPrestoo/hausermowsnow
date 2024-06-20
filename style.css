@@ -12,7 +12,7 @@ nav {
     /* position: absolute; */
     width: 1927px;
     min-height: 80px;
-    background: linear-gradient(270deg, #52A93C 0%, rgba(106, 207, 80, 0.71) 100%);
+    background: white;
 
     display: flex;
     align-items: center;
@@ -55,7 +55,7 @@ nav {
     width: 100%;
 }
 nav a {
-    color: white;
+    color: #002032;
     font-size: 700;
 }
 
@@ -70,7 +70,7 @@ nav a {
     margin: 5px auto;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    background-color: white;
+    background-color: black;
 }
 
 
