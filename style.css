@@ -78,7 +78,7 @@ nav a {
 
 
 main {
-    background-image: url("Images/mainimage.jpg");
+    background-image: url("images/mainimage.jpg");
     background-position: center -10px;
     /* background-size: cover; */
     height: 90vh;
