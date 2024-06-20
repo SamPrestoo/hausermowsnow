@@ -100,6 +100,7 @@ h1 {
 
 }
 .get-quote {
+    box-shadow: none;
     margin-top: 2em;
     width: 300px;
     height: 100px;
@@ -109,6 +110,10 @@ h1 {
     background-color: white;
     justify-content: center;
     text-decoration: none;
+    transition: all .3s ease;
+}
+.get-quote:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .quote-container {
     font-weight: 700;
