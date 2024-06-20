@@ -106,11 +106,12 @@ h1 {
     border-radius: 5px;
     display: flex;
     align-items: center;
+    background-color: white;
+    text-align: center;
 }
 .quote-container {
     font-weight: 700;
     color: #002032;
-    background-color: white;
 }
 
 .nav-item {
