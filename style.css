@@ -140,16 +140,23 @@ h1 {
     flex-direction: row;
     align-items: center;
     padding: 10px 25px;
+    width: 80vw; /* Adjust container width to 80% of the viewport */
+    margin: 0 auto; /* Center the container */
 }
+
 .about-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 8px;
+    flex: 1; /* Allow the text section to take up available space */
 }
+
 .about-us img {
-    height: 664px;
-    width: 498px;
+    max-width: 100%; /* Ensure the image scales down */
+    height: auto; /* Maintain aspect ratio */
+    flex: 1; /* Allow the image to take up available space */
+    object-fit: cover; /* Ensure the image covers its container */
 }
 
 
