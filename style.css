@@ -148,7 +148,8 @@ h1 {
     gap: 8px;
 }
 .about-us img {
-    /* max-height: 350px; */
+    height: 664px;
+    width: 498px;
 }
 
 
