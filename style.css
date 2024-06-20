@@ -96,77 +96,20 @@ h1 {
     margin-top: 2em;
     margin-left: 4em;
     /* letter-spacing: 4px; */
-
-
     text-shadow: 6px 6px 0px rgba(0,0,0,0.4);
 
 }
-
-.quickLinks {
-    position: absolute;
-    right: 300px;
-}
-.quote {
-    width: 400px;
-    height: 100px;
-    background-color: white;
-    margin-bottom: 2em;
-}
-.quote p {
-    position: absolute;
-    margin-left: 15px;
-}
-.topText {
-    margin-bottom: 70px;
-    font-weight: 700;
-    font-size: 1.4em;
-}
-.bottomText {
-    margin-top: 60px;
-    color: #404040;
-}
-.services {
-    width: 400px;
-    height: 100px;
-    background-color: white;
+.get-quote {
     margin-top: 2em;
 }
-.services p {
-    position: absolute;
-    width: 280px;
-    margin-left: 15px;
-}
-.topText2 {
-    font-weight: 700;
-    font-size: 1.4em;
-    margin-top: 14px;
-}
-.bottomText2 {
-    margin-top: 49px;
-    font-size: .9em;
-    color: #404040;
+.quote-container {
+    width: 300px;
+    height: 100px;
+    font-weight: 700px;
+    color: #002032;
+    background-color: white;
 }
 
-.arrow {
-    position: absolute;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(90deg, #52A93C 0%, rgba(106, 207, 80, 0.71) 100%);
-    color: white;
-    display: flex;
-    align-items: center;
-    opacity: 100%;
-    transition: all .2s ease-in-out;
-}
-.arrow p {
-    width: auto;
-    font-size: 60px;
-    margin-left: 23px;
-}
-.arrow:hover {
-    opacity: 70%;
-}
 .nav-item {
     transition: all .2s ease-in-out;
 }
