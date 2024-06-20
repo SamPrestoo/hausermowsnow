@@ -91,7 +91,6 @@ main {
 h1 {
     color: white;
     max-width: 700px;
-    height: 484px;
     text-align: center;
     line-height: 1.5;
     font-size: 4em;
@@ -101,7 +100,6 @@ h1 {
 }
 .get-quote {
     box-shadow: none;
-    margin-top: 2em;
     width: 240px;
     height: 80px;
     border-radius: 5px;
