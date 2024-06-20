@@ -588,9 +588,6 @@ footer a {
     .ourServicesTopUnderline {
         margin-left: 50px;
     }
-    h1 {
-        margin-left: 3em;
-    }
     .topUnderline {
         width: 25.5%;
     }
@@ -601,9 +598,6 @@ footer a {
     }
 }
 @media (max-width: 1700px) {
-    .quickLinks {
-        right: 200px;
-    }
     .ourServicesTopUnderline {
         margin-left: 40px;
     }
@@ -618,9 +612,6 @@ footer a {
     .topUnderline {
         width: 29%;
     }
-    h1 {
-        margin-left: 2em;
-    }
 }
 @media (max-width: 1600px) {
     .topUnderline {
@@ -631,9 +622,6 @@ footer a {
     }
     .businessImage img {
         width: 500px;
-    }
-    .quickLinks {
-        right: 150px;
     }
 }
 @media (max-width: 1550px) {
@@ -648,12 +636,6 @@ footer a {
     }
 }
 @media (max-width: 1500px) {
-    h1 {
-        margin-left: 1em;
-    }
-    .quickLinks {
-        right: 100px;
-    }
     .topUnderline {
         width: 35%;
     }
@@ -683,9 +665,6 @@ footer a {
     .ourServicesTopUnderline {
         margin-left: 45px;
     }
-    .quickLinks {
-        right: 80px;
-    }
     .topUnderline {
         width: 40%;
     }
@@ -697,9 +676,6 @@ footer a {
     }
     .gallery img:hover {
         width: 420px;
-    }
-    .quickLinks {
-        right: 70px;
     }
     .topUnderline {
         width: 44%;
@@ -795,10 +771,6 @@ footer a {
     main {
         flex-direction: column;
     }
-    .quickLinks {
-        right: 32%;
-        margin-top: 42%;
-    }
     .ourServicesTopUnderline {
         margin-left: 40px;
     }
@@ -807,10 +779,6 @@ footer a {
     }
 }
 @media (max-width: 1100px) {
-    .quickLinks {
-        right: 31%;
-        margin-top: 44%;
-    }
     .gallery img {
         width: 310px;
     }
@@ -836,9 +804,6 @@ footer a {
 @media (max-width: 1000px) {
     .column2 {
         margin: 0 8em;
-    }
-    .quickLinks {
-        right: 29%;
     }
     .testimonialsContent {
         flex-direction: column;
@@ -887,15 +852,6 @@ footer a {
     .ourServicesTopUnderline {
         margin-left: 35px;
     }
-    .quickLinks {
-        margin-top: 54%;
-        right: 28.5%;
-    }
-}
-@media (max-width: 940px) {
-    .quickLinks {
-        right: 27%;
-    }
 }
 @media (max-width: 920px) {
     .ourServicesTopText {
@@ -919,10 +875,6 @@ footer a {
     .testimonials {
         margin-top: -8em;
     }
-    .quickLinks {
-        right: 25.5%;
-        margin-top: 56%;
-    }
 }
 @media (max-width: 850px) {
     .ourServicesTopText {
@@ -931,15 +883,8 @@ footer a {
     .ourServicesTopUnderline {
         margin-left: 45px;
     }
-    .quickLinks {
-        margin-top: 58%;
-    }
 }
 @media (max-width: 800px) {
-    .quickLinks {
-        right: 24%;
-        margin-top: 62%;
-    }
     .column2 {
         margin-left: 8em;
         margin-right: 4em;
@@ -1021,10 +966,6 @@ footer a {
     .gallery img:hover {
         width: 540px;
     }
-    .quickLinks {
-        margin-top: 56%;
-        right: 22%;
-    }
     .extraContainer {
         margin-top: 14em;
     }
@@ -1042,10 +983,6 @@ footer a {
 }
 
 @media (max-width: 700px) {
-    .quickLinks {
-        margin-top: 60%;
-        right: 20%;
-    }
     .extraContainer {
         margin-top: 12em;
     }
@@ -1054,10 +991,6 @@ footer a {
     }
 }
 @media (max-width: 670px) {
-    .quickLinks {
-        margin-top: 64%;
-        right: 16;
-    }
     .intro-text {
         font-size: 2rem;
     }
@@ -1069,10 +1002,6 @@ footer a {
     .ourServicesTopText {
         width: 25%;
     }
-    .quickLinks {
-        right: 18%;
-        margin-top: 66%;
-    }
     h1 {
         margin-top: 1em;
         margin-right: 10px;
@@ -1083,17 +1012,10 @@ footer a {
     h1 {
         margin-top: .5em;
     }
-    .quickLinks {
-        margin-top: 74%;
-    }
 }
 @media (max-width: 610px) {
     h1 {
         margin-top: .5em;
-    }
-    .quickLinks {
-        margin-top: 76%;
-        right: 15%;
     }
     .extraContainer {
         margin-top: 10em;
@@ -1112,18 +1034,11 @@ footer a {
     .column3 {
         line-height: 2;
     }
-    .quickLinks {
-        margin-top: 80%;
-    }
 }
 @media (max-width: 550px) {
     h1 {
         font-size: 3em;
         margin-top: 2em;
-    }
-    .quickLinks {
-        right: 10%;
-        margin-top: 76%;
     }
     .column2 {
         margin-left: 1em;
@@ -1140,16 +1055,7 @@ footer a {
         margin-top: 0.7em;
     }
 }
-@media (max-width: 520px) {
-    .quickLinks {
-        margin-top: 78%;
-    }
-}
 @media (max-width: 500px) {
-    .quickLinks {
-        right: 7%;
-        margin-top: 88%;
-    }
     .ourBusiness {
         margin-left: 1em;
     }
@@ -1175,10 +1081,6 @@ footer a {
     }
 }
 @media (max-width: 460px) {
-    .quickLinks {
-        right: 5%;
-        margin-top: 90%;
-    }
     h1 {
         font-size: 2.5em;
         margin-top: 2em;
@@ -1193,9 +1095,6 @@ footer a {
 @media (max-width: 450px) {
     .ourServicesTopText {
         width: 36%;
-    }
-    .quickLinks {
-        right: 3.5%;
     }
     #logo {
         width: 250px;
@@ -1215,10 +1114,6 @@ footer a {
 @media (max-width: 430px) {
     h1 {
         margin-top: 1.5em;
-    }
-    .quickLinks {
-        right: 10%;
-        margin-top: 95%;
     }
     .quote {
         width: 300px;
@@ -1277,15 +1172,8 @@ footer a {
         padding: .5em 1em;
         font-size: 24px;
     }
-    .quickLinks {
-        margin-top: 100%;
-    }
 }
 @media (max-width: 380px) {
-    .quickLinks {
-        margin-top: 95%;
-        right: 8%;
-    }
     h1 {
         font-size: 2.2em;
         margin-top: 1em;
@@ -1312,11 +1200,6 @@ footer a {
         margin-right: 0;
     }
 }
-@media (max-width: 360px) {
-    .quickLinks {
-        margin-top: 110%;
-    }
-}
 @media (max-width: 350px) {
     .quickLinks {
         right: 5%;
@@ -1327,9 +1210,6 @@ footer a {
     }
 }
 @media (max-width: 337px) {
-    .quickLinks {
-        margin-top: 105%;
-    }
     h1 {
         margin-top: 1em;
     }
@@ -1338,9 +1218,6 @@ footer a {
     h1 {
         font-size: 2em;
         margin-top: 2em;
-    }
-    .quickLinks {
-        margin-top: 115%;
     }
 }
 @media (max-width: 330px) {
@@ -1354,16 +1231,8 @@ footer a {
     .ourBusiness img {
         width: 250px;
     }
-    .quickLinks {
-        right: 3%;
-        margin-top: 110%;
-    }
 }
 @media (max-width: 320px) {
-    .quickLinks {
-        right: 10%;
-        margin-top: 135%;
-    }
     .quote {
         width: 250px;
     }
@@ -1402,22 +1271,10 @@ footer a {
     h1 {
         margin-top: 3em;
     }
-    .quickLinks {
-        margin-top: 145%;
-        right: 8%;
-    }
 }
 @media (max-width: 302px) {
     h1 {
         margin-top: 1em;
     }
-    .quickLinks {
-        right: 6%;
-    }
-}
-@media (max-width: 288px) {
-    .quickLinks {
-        margin-top: 155%;
-        right: 4%;
-    }
+
 }
