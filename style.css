@@ -102,11 +102,12 @@ h1 {
 }
 .get-quote {
     margin-top: 2em;
-}
-.quote-container {
     width: 300px;
     height: 100px;
-    font-weight: 700px;
+    border-radius: 5px;
+}
+.quote-container {
+    font-weight: 700;
     color: #002032;
     background-color: white;
 }
