@@ -1,1093 +1,308 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Merriweather Sans', sans-serif;
-    width: 100vw;
-    height: 200vh;
-    overflow-x: hidden;
-    z-index: -5;
-}
-
-nav {
-    /* position: absolute; */
-    width: 1927px;
-    min-height: 80px;
-    background: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-}
-#logo {
-    width: 350px;
-    margin-top: 2px;
-}
-.leftSide a {
-    margin-left: 1.5em;
-}
-
-
-
-.rightSide {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 1em;
-    box-sizing: border-box;
-}
-.rightSide a {
-    position: relative;
-    margin: 0 1em;
-    padding: 0 10px;
-    text-decoration: none;
-}
-.rightSide a:after {
-    content: "";
-    position: absolute;
-    background-color: #002032;
-    height: 3px;
-    width: 0%;
-    left: 0;
-    bottom: -7px;
-    transition: .3s;
-}
-.rightSide a:hover:after {
-    width: 100%;
-}
-nav a {
-    color: #002032;
-    font-weight: 700;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    background-color: #002032;
-}
-
-
-
-
-
-main {
-    background-image: url("images/mainimage.jpg");
-    background-position: center -10px;
-    /* background-size: cover; */
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* justify-content: flex-start; */
-}
-h1 {
-    color: white;
-    max-width: 700px;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 4em;
-    /* letter-spacing: 4px; */
-    text-shadow: 6px 6px 0px rgba(0,0,0,0.4);
-
-}
-.get-quote {
-    box-shadow: none;
-    width: 240px;
-    height: 80px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    justify-content: center;
-    text-decoration: none;
-    transition: all .3s ease;
-}
-.get-quote:hover {
-    box-shadow: rgba(255, 255, 255, 0.5) 0px 4px 8px, rgba(255, 255, 255, 1) 0px 0px 0px 6px;
-}
-.quote-container {
-    font-weight: 700;
-    color: #002032;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-
-.nav-item {
-    transition: all .2s ease-in-out;
-}
-
-
-
-
-
-/* allows new text shown on users screen to fade in after 1 second */
-#fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-
-.about-us {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* padding: 10px 25px; */
-    margin: 4em 0;
-}
-.about-us-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 85vw;
-    margin: 0 auto;
-}
-
-.about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 8px;
-    flex: 1; /* Allow the text section to take up available space */
-    padding-right: 2em;
-}
-.about-text h2, .about-text p {
-    margin: 0 0;
-}
-.about-text h2 {
-    font-size: 1.8rem;
-}
-.about-text p {
-    font-size: 1.4rem;
-    font-weight: 300;
-}
-
-.about-us img {
-    max-width: 400px;
-    height: auto;
-    object-fit: cover; /* Ensure the image covers its container */
-}
-
-
-
-.intro {
-    background: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.slider {
-    background: rgb(106, 207, 80);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-}
-
-.intro-text {
-    color: rgb(233, 233, 233);
-    font-size: 3rem;
-}
-
-.hide {
-    background: black;
-    overflow: hidden;
-}
-
-.hide span {
-    transform: translateY(100%);
-    display: inline-block;
-}
-
-
-@keyframes slide{
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(0);
-    }
-    30% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    55% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-200%);
-    }
-    80% {
-        transform: translateX(-300%);
-    }
-    100% {
-        transform: translateX(-300%);
-    }
-}
-img {
-    width: 100%;
-}
-
-
-.gallery {
-    width: 100%;
-}
-.gallery-container {
-    align-items: center;
-    display: flex;
-    height: 400px;
-    margin: 0 auto;
-    max-width: 1000px;
-    position: relative;
-}
-.gallery-item {
-    height: 200px;
-    opacity: 0;
-    position: absolute;
-    transition: all .3s ease-in-out;
-    width: 330px;
-    z-index: 0;
-    border-radius: 15px;
-    background-size: contain;
-}
-.gallery-item-1{
-    left: 15%;
-    opacity: .4;
-    transform: translateX(-50%);
-}
-.gallery-item-2, .gallery-item-4 {
-    height: 250px;
-    opacity: 0.8;
-    width: 380px;
-    z-index: 1;
-}
-.gallery-item-2{
-    left: 30%;
-    transform: translateX(-50%);
-}
-.gallery-item-3{
-    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
-    height: 300px;
-    opacity: 1;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 430px;
-    z-index: 2;
-}
-.gallery-item-4 {
-    left: 70%;
-    transform: translateX(-50%);
-}
-.gallery-item-5 {
-    left: 85%;
-    opacity: .4;
-    transform: translateX(-50%);
-}
-.gallery-controls {
-    display: flex;
-    justify-content: center;
-    margin: 25px 0;
-    height: 100px;
-    margin-top: -1.5em;
-}
-.gallery-controls-next{
-    font-weight: 700;
-    font-size: 1.2em; 
-}
-.gallery-controls-previous{
-    font-weight: 700;
-    font-size: 1.2em;
-}
-.gallery-controls button{
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    margin: 0 50px;
-    padding: 0 12px;
-    text-transform: capitalize;
-}
-.gallery-controls-button:focus{
-    outline: none;
-}
-.gallery-controls-previous{
-    position: relative;
-}
-.gallery-controls-previous::before{
-    border: solid #000;
-    border-width: 0 5px 5px 0;
-    content: '';
-    display: inline-block;
-    height: 5px;
-    left: -30px;
-    padding: 10px;
-    position: absolute;
-    top: 25%;
-    transform: rotate(135deg) translateY(-50%);
-    transition: left 0.15s ease-in-out;
-    width: 5px;
-}
-.gallery-controls-previous:hover::before{
-    left: -40px;
-}
-.gallery-controls-next{
-    position: relative;
-}
-.gallery-controls-next::before{
-    border: solid #000;
-    border-width: 0 5px 5px 0;
-    content: '';
-    display: inline-block;
-    height: 5px;
-    padding: 10px;
-    position: absolute;
-    right: -30px;
-    top: 45px;
-    transform: rotate(-45deg) translateY(-50%);
-    transition: right 0.15s ease-in-out;
-    width: 5px;
-}
-
-.gallery-controls-next:hover:before{
-    right: -40px;
-}
-.gallery-nav{
-    bottom: -15px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    width: 100%;
-}
-.gallery nav li{
-    background: #ccc;
-    border-radius: 50%;
-    height: 10px;
-    margin: 0 16px;
-    width: 10px;
-}
-.gallery-nav li.gallery--item-selected {
-    background: #555;
-}
-
-
-
-
-
-.testimonials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4em;
-    margin-bottom: 6em;
-}
-.testimonials h2 {
-    margin-top: .5em;
-}
-.testimonialsTopUnderline {
-    height: 5px;
-    background-color: black;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.testimonialsContent {
-    display: flex;
-    width: 85%;
-}
-.testimonial1 {
-    text-align: right;
-    margin-right: 2em;
-    background-color: #D9D9D9;
-    padding: 10px 25px;
-    border-radius: 10px;
-}
-.testimonial2 {
-    text-align: center;
-    background-color: #D9D9D9;
-    padding: 10px 25px;
-    border-radius: 10px;
-}
-.testimonial3 {
-    margin-left: 2em;
-    background-color: #D9D9D9;
-    padding: 10px 25px;
-    border-radius: 10px;
-}
-.testimonialsContent h3 {
-    font-weight: 700;
-    font-size: 2em;
-    color: #52A93C;
-}
-.testimonialsContent span {
-    font-weight: 700;
-    font-size: 2em;
-    color: #52A93C;
-    margin-right: .5em;
-}
-.textTestimonial {
-    font-style: italic;
-    line-height: 1.6;
-}
-.nameTestimonial {
-    font-weight: 700;
-}
-
-
-
-
-
-
-.ourServices {
-    background-color: #151515;
-    color: white;
-    padding: 4em 0;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
-.ourServicesTopText {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 8%;
-    margin-left: auto;
-    margin-right: 6em;
-}
-.ourServicesTopUnderline {
-    height: 5px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    margin-bottom: -.5em;
-}
-.ourServicesContent {
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-}
-.ourServicesContent a {
-    text-decoration: none;
-    color: white;
-}
-
-
-.ourServices1 {
-    background-color: rgba(255, 255, 255, .15);
-    padding: 5px 15px;
-    text-align: center;
-    transition: all .2s ease-in-out;
-}
-.ourServices1:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-.ourServices2 {
-    background-color: rgba(255, 255, 255, .15);
-    padding: 5px 15px;
-    text-align: center;
-    margin-left: 15px;
-    margin-right: 15px;
-    transition: all .2s ease-in-out;
-}
-.ourServices2:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-.ourServices3 {
-    background-color: rgba(255, 255, 255, .15);
-    padding: 5px 15px;
-    text-align: center;
-    margin-right: 15px;
-    transition: all .2s ease-in-out;
-}
-.ourServices3:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-.ourServices4 {
-    background-color: rgba(255, 255, 255, .15);
-    padding: 5px 15px;
-    text-align: center;
-    transition: all .2s ease-in-out;
-}
-.ourServices4:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-
-.serviceName {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-.serviceDescription {
-    font-size: .9em;
-    line-height: 1.3;
-    color: rgb(224, 224, 224);
-    margin-bottom: 1.5em;
-}
-
-
-
-.freeQuote {
-    height: 20vh;
-    background: linear-gradient(90deg, #52A93C 0%, rgba(106, 207, 80, 0.71) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.quoteBtn {
-    
-}
-.quoteBtn a {
-    text-decoration: none;
-    color: black;
-    font-style: italic;
-    font-size: 1.5em;
-    background-color: white;
-    padding: 1em 2em;
-    border-radius: 50px;
-    box-shadow: 0px 8px 4px 6px rgba(0, 0, 0, 0.35);
-    transition: all .3s ease-in-out;   
-}
-.quoteBtn a:hover {
-    font-size: 1.65em;
-    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.35);
-}
-
-
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 1em 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-footer a {
-    text-decoration: underline;
-    color: white;
-}
-
-.column1 {
-
-}
-.column2 {
-    margin-left: 16em;
-    margin-right: 16em;
-}
-.column3 {
-
-}
-.column3 span {
-    margin-left: 5px;
-}
-.top {
-    text-decoration: none;
-}
-.top:hover {
-    cursor: pointer;
-}
-
-#phoneNumber {
-    color: rgb(199, 199, 199);
-    font-size: .8em;
-}
-#copyright {
-    color: rgb(199, 199, 199);
-    font-size: .8em;
-}
-
-
-
-
-
-@media (max-width: 1830px) {
-    .ourServicesTopText {
-        width: 10%;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 50px;
-    }
-}
-
-@media (max-width: 1700px) {
-    .ourServicesTopUnderline {
-        margin-left: 40px;
-    }
-}
-
-@media (max-width: 1600px) {
-    .ourServicesContent {
-        width: 90%;
-    }
-}
-@media (max-width: 1550px) {
-    .ourServicesTopUnderline {
-        margin-left: 30px;
-    }
-}
-@media (max-width: 1470px) {
-    .ourServicesTopText {
-        width: 12%;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 50px;
-    }
-}
-
-@media (max-width: 1365px) {
-    .ourServicesTopUnderline {
-        margin-left: 45px;
-    }
-}
-
-@media (max-width: 1300px) {
-    h1 {
-        font-size: 3.5em;
-        margin-top: 3em;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 40px;
-    }
-}
-
-@media (max-width: 1250px) {
-    h1 {
-        margin-left: 0;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 30px;
-    }
-    
-}
-@media (max-width: 1220px) {
-    .ourServicesTopText {
-        width: 14%;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 50px;
-    }
-}
-@media (max-width: 1200px) {
-    .serviceDescription {
-        font-size: .8em;
-    }
-    .serviceName {
-        font-size: 1.3em;
-    }
-}
-@media (max-width: 1150px) {
-    main {
-        flex-direction: column;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 40px;
-    }
-    h1 {
-        margin-top: 2em;
-    }
-}
-@media (max-width: 1050px) {
-    .ourServicesTopText {
-        width: 16%;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 50px;
-    }
-    .quickLinks {
-        margin-top: 48%;
-        right: 30%;
-    }
-}
-@media (max-width: 1000px) {
-    .column2 {
-        margin: 0 8em;
-    }
-    .testimonialsContent {
-        flex-direction: column;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hauser Mow & Snow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/hauser.png">
+</head>
+<body>
+
+
+
+
+
+
+
+    <nav>
+        <div class="leftSide">
+            <a href="index.html">
+                <img src="images/changedlogo2.png" alt="logo" id="logo">
+            </a>
+        </div>
+
+        <div class="rightSide">
+            <a class="nav-item" href="about/about.html">About</a>
+            <a class="nav-item" href="services/services.html">Services</a>
+            <a class="nav-item" href="mailto:Hausermnd@gmail.com?subject=Contact Inquiry">Contact</a>
+        </div>
+
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Most Competitive<br> Prices for Top-Quality<br> Lawncare Services<br> In Madison</h1>
+
+        <a href="#" class="get-quote">
+            <div class="quote-container">Get a Free Quote</div>
+        </a>
+    </main>
+
+
+    <!-- this is for js slide -->
+    <div class="intro">
+        <div class="intro-text">
+            <h2 class="hide">
+                <span class="text">Make your</span>
+            </h2>
+            <h2 class="hide">
+                <span class="text">Lawn Healthier</span>
+            </h2>
+            <h2 class="hide">
+                <span class="text">& Happier.</span>
+            </h2>
+        </div>
+    </div>
+
+    <div class="slider"></div>
+
+    <!-- end of js slide -->
+
+
+
+
+
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"
+    ></script>
+
+
+    <script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="about-us">
+        <div class="about-us-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Hauser Mow & Snow LLC was founded by brothers Mikael Hauser (18) and Dominik Hauser (17) with the goal of saving money for education. We service lawns in the West Madison and Middleton area and are always looking to improve and expand.</p>
+                <p>Mikael is 18 years old, he enjoys working out, snowboarding and traveling. He runs all the Business side of the company. Dominik is the younger brother to Mikael at 17 years old. He enjoys playing soccer and working on engines. Dominik handles all equipment mechanics and maintenance.</p>
+            </div>
+            <img src="images/mowingBrothers.jpg" alt="Hauser Brothers Image">
+        </div>
         
-    }
-    .testimonial1 {
-        width: 80%;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .testimonial2 {
-        width: 80%;
-        margin: 0;
-        margin: 1em auto;
-    }
-    .testimonial3 {
-        width: 80%;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .ourServicesContent {
-        align-items: normal;
-    }
-    .ourServicesContent {
-        flex-direction: column;
-    }
-    .ourServices2 {
-        margin: 1em 0 0 0;
-    }
-    .ourServices3 {
-        margin: 1em 0;
-    }
-}
-@media (max-width: 975px) {
-    .ourServicesTopUnderline {
-        margin-left: 35px;
-    }
-}
-@media (max-width: 920px) {
-    .ourServicesTopText {
-        width: 18%;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 45px;
-    }
-}
-@media (max-width: 900px) {
-    .testimonials {
-        margin-top: -8em;
-    }
-}
-@media (max-width: 850px) {
-    .ourServicesTopText {
-        width: 20%;
-    }
-    .ourServicesTopUnderline {
-        margin-left: 45px;
-    }
-}
-@media (max-width: 800px) {
-    .column2 {
-        margin-left: 8em;
-        margin-right: 4em;
-    }
-    .freeQuote {
-        height: 15vh;
-    }
-    h1 {
-        margin-top: 1.5em;
-    }
-}
+    </section>
+    
 
 
-@media (max-width: 768px) {
-    /* hamburger menu tings */
-    .hamburger {
-        display: block;
-        margin-right: 1em;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .rightSide {
-        z-index: 1;
-        position: absolute;
-        left: -100%;
-        top: 80px;
-        gap: 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        transition: all .35s;
-        margin-right: 0;
-    }
-    .nav-item {
-        position: relative;
-        font-weight: 700;
-        color: black;
-        height: 5vh;
-        font-size: 1.4em;
-    }
-    .nav-item:nth-child(1) {
-        margin-top: 25px;
-    }
-    .nav-item:nth-child(3) {
-        margin-bottom: 5px;
-    }
-    .nav-item:hover {
-        color: #52A93C;
-    }
-    .rightSide a:hover::after {
-        width: 0%;
-    }
-    .rightSide.active {
-        background-color: rgba(255, 255, 255, 0.96);
-        left: 0;
-        padding: 0;
-    }
+    <section class="gallery">
+        <div class="gallery-container">
+            <img class="gallery-item gallery-item-1" src="images/lawn1.JPG" data-index="1">
+            <img class="gallery-item gallery-item-2" src="images/lawn6.JPG" data-index="2">
+            <img class="gallery-item gallery-item-3" src="images/lawn3.JPG" data-index="3">
+            <img class="gallery-item gallery-item-4" src="images/lawn4.JPG" data-index="4">
+            <img class="gallery-item gallery-item-5" src="images/lawn5.JPG" data-index="5">
+        </div>
+        <div class="gallery-controls"></div>
+    </section>
+
+
+    <!-- Script for gallery carousel -->
+    <script>
+        const galleryContainer = document.querySelector('.gallery-container');
+        const galleryControlsContainer = document.querySelector('.gallery-controls');
+        const galleryControls = ['previous', 'next'];
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        class Carousel {
+            constructor(container, items, controls) {
+                this.carouselContainer = container;
+                this.carouselControls = controls;
+                this.carouselArray = [...items];
+            }
+
+            updateGallery() {
+                this.carouselArray.forEach(el => {
+                    el.classList.remove('gallery-item-1');
+                    el.classList.remove('gallery-item-2');
+                    el.classList.remove('gallery-item-3');
+                    el.classList.remove('gallery-item-4');
+                    el.classList.remove('gallery-item-5');
+                });
+
+                this.carouselArray.slice(0, 5).forEach((el, i) => {
+                    el.classList.add(`gallery-item-${i + 1}`);
+                });
+            }
+
+            setCurrentState(direction) {
+                if (direction.className.includes('gallery-controls-previous')) {
+                    this.carouselArray.unshift(this.carouselArray.pop());
+                } else {
+                    this.carouselArray.push(this.carouselArray.shift());
+                }
+                this.updateGallery();
+            }
+
+            setControls() {
+                this.carouselControls.forEach(control => {
+                    const button = document.createElement('button');
+                    button.className = `gallery-controls-${control}`;
+                    button.innerHTML = control === 'previous' ? 
+                        '<i class="fas fa-chevron-left"></i>' : 
+                        '<i class="fas fa-chevron-right"></i>';
+                    galleryControlsContainer.appendChild(button);
+                });
+            }
+
+            useControls() {
+                const triggers = [...galleryControlsContainer.childNodes];
+                triggers.forEach(control => {
+                    control.addEventListener('click', e => {
+                        e.preventDefault();
+                        this.setCurrentState(control);
+                    });
+                });
+            }
+        }
+
+        const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
+        exampleCarousel.setControls();
+        exampleCarousel.useControls();
+    </script>
 
 
 
 
-    h1 {
-        margin-top: 1em;
-    }
-    .testimonials {
-        margin-top: -8em;
-    }
-}
-@media (max-width: 730px) {
-    .ourServicesTopText {
-        width: 23%;
-    }
-}
+    <section id="testimonials" class="testimonials">
+        <div class="topTextTestimonials">
+            <div class="testimonialsTopUnderline"></div>
+            <h2>Testimonials</h2>
+        </div>
 
-@media (max-width: 700px) {
-    .testimonials {
-        margin-top: -6em;
-    }
-}
-@media (max-width: 670px) {
-    .intro-text {
-        font-size: 2rem;
-    }
-}
-@media (max-width: 640px) {
-    .ourServicesTopText {
-        width: 25%;
-    }
-    h1 {
-        margin-top: 1em;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-}
-@media (max-width:628px) {
-    h1 {
-        margin-top: .5em;
-    }
-}
-@media (max-width: 610px) {
-    h1 {
-        margin-top: .5em;
-    }
-    .testimonials {
-        margin-top: -4em;
-    }
-}
-@media (max-width: 590px) {
-    .ourServicesTopText {
-        width: 30%;
-    }
-    .column2 {
-        line-height: 1.7;
-    }
-    .column3 {
-        line-height: 2;
-    }
-}
-@media (max-width: 550px) {
-    h1 {
-        font-size: 3em;
-        margin-top: 2em;
-    }
-    .column2 {
-        margin-left: 1em;
-    }
-}
-@media (max-width: 540px) {
-    h1 {
-        margin-top: 0.7em;
-    }
-}
-@media (max-width: 500px) {
-    .testimonials {
-        margin-top: -2em;
-    }
-    .nav-item:nth-child(1) {
-        margin-top: 20px;
-    }
-    .nav-item:nth-child(3) {
-        margin-bottom: 10px;
-    }
-}
-@media (max-width: 490px) {
-    .ourServicesTopText {
-        width: 33%;
-    }
-}
-@media (max-width: 460px) {
-    h1 {
-        font-size: 2.5em;
-        margin-top: 2em;
-    }
-}
-@media (max-width: 450px) {
-    .ourServicesTopText {
-        width: 36%;
-    }
-    #logo {
-        width: 250px;
-        margin-bottom: -7px;
-    }
-    .leftSide a {
-        margin-left: .7em;
-    }
-}
-@media (max-width: 430px) {
-    h1 {
-        margin-top: 1.5em;
-    }
-    .quote {
-        width: 300px;
-    }
-    .quote .topText, .quote .bottomText {
-        width: 60%;
-    }
-    .quote .topText {
-        margin-top: 20px;
-    }
-    .quote .bottomText {
-        margin-top: 50px;
-    }
-    .services {
-        width: 300px;
-    }
-    .services .topText2, .services .bottomText2 {
-        width: 60%;
-    }
-    .services .topText2 {
-        margin-top: 10px;
-    }
-    .services .bottomText2 {
-        margin-top: 40px;
-    }
-    .column2 {
-        margin-right: 20px;
-    }
-    footer {
-        font-size: .9em;
-    }
-}
-@media (max-width: 420px) {
-    .testimonials {
-        margin-bottom: 2em;
-    }
-    .ourServices {
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-    .nav-item:nth-child(3) {
-        margin-bottom: 10px;
-    }
-    .arrow p {
-        margin-left: 28px;
-    }
-}
-@media (max-width: 410px) {
-    .ourServicesTopText {
-        width: 40%;
-    }
-    .quoteBtn a {
-        padding: .5em 1em;
-        font-size: 24px;
-    }
-}
-@media (max-width: 380px) {
-    h1 {
-        font-size: 2.2em;
-        margin-top: 1em;
-    }
-    .testimonials {
-        margin-top: -2em;
-    }
-}
-@media (max-width: 370px) {
-    .ourServicesTopText {
-        width: 50%;
-    }
-}
-@media (max-width: 350px) {
-    #logo {
-        width: 200px;
-    }
-}
-@media (max-width: 337px) {
-    h1 {
-        margin-top: 1em;
-    }
-}
-@media (max-width: 335px) {
-    h1 {
-        font-size: 2em;
-        margin-top: 2em;
-    }
-}
-@media (max-width: 330px) {
-    footer {
-        font-size: 0.8em;
-    }
-}
-@media (max-width: 320px) {
-    .quote {
-        width: 250px;
-    }
-    .quote .topText, .quote .bottomText {
-        width: 50%;
-        font-size: 1em;
-    }
-    .quote .topText {
-        margin-top: 10px;
-    }
-    .quote .bottomText {
-        margin-top: 55px;
-    }
-    .services {
-        width: 250px;
-    }
-    .services .topText2, .services .bottomText2 {
-        width: 50%;
-        font-size: 1em;
-    }
-    .services .topText2 {
-        margin-top: 10px;
-    }
-    .services .bottomText2 {
-        margin-top: 30px;
-        font-size: .8em;
-    }
-}
-@media (max-width: 310px) {
-    h1 {
-        margin-top: 3em;
-    }
-}
-@media (max-width: 302px) {
-    h1 {
-        margin-top: 1em;
-    }
+        <div class="testimonialsContent">
+            <div id="reviews" class="testimonial1">
+                <p id="fade-in" class="textTestimonial"><span>"</span>Hauser Mow & Snow has been servicing my lawn for two years now! Their service has been the best I've ever had. They are timely and dedicated at an affordable price. My yard has never looked better! I would highly recommend there service to everyone. YOU WILL NOT BE DISSAPOINTED!</p>
+                <p id="fade-in" class="nameTestimonial">Ed W.</p>
+            </div>
 
-}
+
+            <div id="reviews" class="testimonial2">
+                <p id="fade-in" class="textTestimonial"><span>"</span>Dominik and Mikael have been taking care of my lawn and other yard needs for several years now. I cannot recommend them enough! They have not only mowed and trimmed, but also have helped me with summer and fall yard clean up, weeding, mulch spread, moving things, and even helped me to build a gazebo in my backyard and put up and take down my Christmas lights each year! They are hard-working, great communicators and get projects done fast.</p>
+                <p id="fade-in" class="nameTestimonial">Leah N.</p>
+            </div>
+
+
+            <div id="reviews" class="testimonial3">
+                <p id="fade-in" class="textTestimonial"><span>"</span>Last summer with our home on the market and two busy work schedules I was so thankful to be able to call on Dom and Mikael for assistance with mowing our yard. Even though we did not call them regularly, they would show up whenever we called. Their pricing was fair and they finished the job quickly and it always looked great! We sold the house! Thank you Dom and Mikael for being so responsive to our calls for help.</p>
+                <p id="fade-in" class="nameTestimonial">Brenda J.</p>
+            </div>
+        </div>
+        
+
+    </section>
+
+    
+    <section class="ourServices">
+
+        <div class="ourServicesTopText">
+            <div class="ourServicesTopUnderline"></div>
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="ourServicesContent">
+            <a href="services/services.html">
+                <div class="ourServices1">
+                    <p class="serviceName">Regular Mowing Services</p>
+                    <p id="fade-in" class="serviceDescription">We offer full service mow, trim, blow, and edge lawn service on weekly basis.</p>
+                </div>
+            </a>
+            <a href="services/services.html">
+                <div class="ourServices2">
+                    <p class="serviceName">Snow Plowing</p>
+                    <p id="fade-in" class="serviceDescription">We offer snow plowing service with competitive pricing and quality work!</p>
+                </div>
+            </a>
+            <a href="services/services.html">
+                <div class="ourServices3">
+                    <p class="serviceName">Fall/Spring Cleanup</p>
+                    <p id="fade-in" class="serviceDescription">Includes leaves, mulch, debri and other general yard maintenance at the beginning and end of each season.</p>
+                </div>
+            </a>
+            <a href="services/services.html">
+                <div class="ourServices4">
+                    <p class="serviceName">Dethatching</p>
+                    <p id="fade-in" class="serviceDescription">Done during early spring and late fall, dethatching is a great way to get your lawn looking healthy and green again!</p>
+                </div>
+            </a>
+            
+
+            
+
+            
+
+            
+        </div>
+        
+
+    </section>
+
+    <section class="freeQuote">
+        <div class="quoteBtn">
+            <a href="mailto:Hausermnd@gmail.com?subject=Free Quote"><b>Get A Free Quote</b></a>
+        </div>
+    </section>
+
+
+    <footer>
+
+        <div class="column1">
+            <p><b>Mikael & Dominik Hauser</b></p>
+            <p><b>Hauser Mow & Snow LLC</b></p>
+            <p id="phoneNumber">(608) 504-8696</p>
+            <p id="copyright"><span>&#169;</span>2023 Hauser Mow & Snow LLC All Rights Reserved. </p>
+        </div>
+        <div class="column2">
+            <a href="about/about.html">
+                <p>About</p>
+            </a>
+            <a href="services/services.html">
+                <p>Services</p>
+            </a>
+            <a href="mailto:Hausermnd@gmail.com?subject=Contact Inquiry">
+                <p>Contact</p>
+            </a>
+            
+        </div>
+        <div class="column3">
+            <a href="mailto:Hausermnd@gmail.com?subject=Free Quote"><p>Get a Quote</p></a>
+            <a href="#testimonials"><p>Testimonials</p></a>
+            <a class="top" onclick="toTop()"><p>Top<span>&uarr;</span></p></a>
+            
+            
+            
+        </div>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
