@@ -139,9 +139,15 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 25px;
-    width: 80vw; /* Adjust container width to 80% of the viewport */
-    margin: 0 auto; /* Center the container */
+    /* padding: 10px 25px; */
+    margin: 4em 0;
+}
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85vw;
+    margin: 0 auto;
 }
 
 .about-text {
@@ -150,12 +156,16 @@ h1 {
     justify-content: flex-start;
     gap: 8px;
     flex: 1; /* Allow the text section to take up available space */
+    padding-right: 2em;
+}
+.about-text h2, .about-text p {
+    margin: 0 0;
+    font-size: larger;
 }
 
 .about-us img {
-    max-width: 100%; /* Ensure the image scales down */
-    height: auto; /* Maintain aspect ratio */
-    flex: 1; /* Allow the image to take up available space */
+    max-width: 400px;
+    height: auto;
     object-fit: cover; /* Ensure the image covers its container */
 }
 
