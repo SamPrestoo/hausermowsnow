@@ -160,7 +160,12 @@ h1 {
 }
 .about-text h2, .about-text p {
     margin: 0 0;
-    font-size: larger;
+}
+.about-text h2 {
+    font-size: 1.8rem;
+}
+.about-text p {
+    font-size: 1.4rem;
 }
 
 .about-us img {
@@ -208,90 +213,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.gallery {
-    background-color: #151515;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4em 0;
-}
-.gallery img {
-    width: 420px;
-    height: 225.02px;
-    transition: all .3s ease-in-out;
-    object-fit: cover;
-    margin: 10px;
-}
-.gallery img:hover {
-    height: 242.02px;
-    width: 440px;
-}
-
-.topRow {
-    display: flex;
-    align-items: flex-end;
-}
-.middleRow {
-    display: flex;
-    align-items: center;
-}
-.bottomRow {
-    display: flex;
-    align-items: flex-start;
-}
-
-
-
-
-
-.extraContainer {
-    display: none;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
-
-.container {
-    z-index: -2;
-    width: 80vmin;
-    position: relative;
-    transform: translate(-50%, -50%);
-    /* top: 50%; */
-    left: 50%;
-    overflow: hidden;
-    border: 20px solid rgba(140,140,140,.4);
-    border-radius: 8px;
-    box-shadow: 0px 10px 30px rgba(106,207,80,0.65);
-}
-.wrapper {
-    width: 100%;
-    display: flex;
-}
 @keyframes slide{
     0% {
         transform: translateX(0);
@@ -322,6 +243,139 @@ img {
     width: 100%;
 }
 
+
+.gallery {
+    width: 100%;
+}
+.gallery-container {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+.gallery-item {
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    width: 330px;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: contain;
+}
+.gallery-item-1{
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+.gallery-item-2, .gallery-item-4 {
+    height: 250px;
+    opacity: 0.8;
+    width: 380px;
+    z-index: 1;
+}
+.gallery-item-2{
+    left: 30%;
+    transform: translateX(-50%);
+}
+.gallery-item-3{
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 430px;
+    z-index: 2;
+}
+.gallery-item-4 {
+    left: 70%;
+    transform: translateX(-50%);
+}
+.gallery-item-5 {
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    height: 100px;
+}
+.gallery-controls button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
+}
+.gallery-controls-button:focus{
+    outline: none;
+}
+.gallery-controls-previous{
+    position: relative;
+}
+.gallery-controls-previous::before{
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: -30px;
+    padding: 10px;
+    position: absolute;
+    top: 25%;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 5px;
+}
+.gallery-controls-previous:hover::before{
+    left: -40px;
+}
+.gallery-controls-next{
+    position: relative;
+}
+.gallery-controls-next::before{
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    padding: 10px;
+    position: absolute;
+    right: -30px;
+    top: 45;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 5px;
+}
+
+.gallery-controls-next:hover:before{
+    right: -40px;
+}
+.gallery-nav{
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+.gallery nav li{
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+}
+.gallery-nav li.gallery--item-selected {
+    background: #555;
+}
 
 
 
@@ -596,15 +650,7 @@ footer a {
         margin-left: 45px;
     }
 }
-@media (max-width: 1330px) {
-    .gallery img {
-        margin: 5px;
-        width: 400px;
-    }
-    .gallery img:hover {
-        width: 420px;
-    }
-}
+
 @media (max-width: 1300px) {
     h1 {
         font-size: 3.5em;
@@ -614,14 +660,7 @@ footer a {
         margin-left: 40px;
     }
 }
-@media (max-width: 1290px) {
-    .gallery img {
-        width: 380px;
-    }
-    .gallery img:hover {
-        width: 400px;
-    }
-}
+
 @media (max-width: 1250px) {
     h1 {
         margin-left: 0;
@@ -640,15 +679,6 @@ footer a {
     }
 }
 @media (max-width: 1200px) {
-    .column2 {
-        margin: 0 12em;
-    }
-    .gallery img {
-        width: 350px;
-    }
-    .gallery img:hover {
-        width: 370px;
-    }
     .serviceDescription {
         font-size: .8em;
     }
@@ -665,14 +695,6 @@ footer a {
     }
     h1 {
         margin-top: 2em;
-    }
-}
-@media (max-width: 1100px) {
-    .gallery img {
-        width: 310px;
-    }
-    .gallery img:hover {
-        width: 330px;
     }
 }
 @media (max-width: 1050px) {
@@ -726,12 +748,6 @@ footer a {
     }
 }
 @media (max-width: 975px) {
-    .gallery img {
-        width: 280px;
-    }
-    .gallery img:hover {
-        width: 300px;
-    }
     .ourServicesTopUnderline {
         margin-left: 35px;
     }
@@ -745,16 +761,6 @@ footer a {
     }
 }
 @media (max-width: 900px) {
-    .gallery {
-        display: none;
-    }
-    .extraContainer {
-        display: block;
-        margin-top: 15em;
-    }
-    .wrapper {
-        animation: slide 16s infinite;
-    }
     .testimonials {
         margin-top: -8em;
     }
@@ -840,15 +846,6 @@ footer a {
     h1 {
         margin-top: 1em;
     }
-    .gallery img {
-        width: 500px;
-    }
-    .gallery img:hover {
-        width: 540px;
-    }
-    .extraContainer {
-        margin-top: 14em;
-    }
     .testimonials {
         margin-top: -8em;
     }
@@ -860,9 +857,6 @@ footer a {
 }
 
 @media (max-width: 700px) {
-    .extraContainer {
-        margin-top: 12em;
-    }
     .testimonials {
         margin-top: -6em;
     }
@@ -890,9 +884,6 @@ footer a {
 @media (max-width: 610px) {
     h1 {
         margin-top: .5em;
-    }
-    .extraContainer {
-        margin-top: 10em;
     }
     .testimonials {
         margin-top: -4em;
@@ -924,9 +915,6 @@ footer a {
     }
 }
 @media (max-width: 500px) {
-    .extraContainer {
-        margin-top: 8em;
-    }
     .testimonials {
         margin-top: -2em;
     }
@@ -1023,12 +1011,6 @@ footer a {
     h1 {
         font-size: 2.2em;
         margin-top: 1em;
-    }
-    main {
-        /* height: 70vh; */
-    }
-    .extraContainer {
-        margin-top: 6em;
     }
     .testimonials {
         margin-top: -2em;
