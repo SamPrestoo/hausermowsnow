@@ -257,20 +257,20 @@ h1 {
 }
 
 .service-item:nth-child(1) {
-    background-image: url('Images/mower.jpg');
+    background-image: url('images/mower.jpg');
 }
 
 .service-item:nth-child(2) {
-    background-image: url('Images/plow.jpg');
+    background-image: url('images/plow.jpg');
 }
 
 .service-item:nth-child(3) {
-    background-image: url('Images/raking.jpg');
+    background-image: url('images/raking.jpg');
     background-position-y: 5%;
 }
 
 .service-item:nth-child(4) {
-    background-image: url('Images/dethatching.jpg');
+    background-image: url('images/dethatching.jpg');
 }
 
 /* Styles for larger screens */
