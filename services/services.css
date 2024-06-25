@@ -229,3 +229,14 @@ footer a {
         margin-bottom: 1em;
     }
 }
+@media (max-width: 450px) {
+    #logo {
+        width: 250px;
+        margin-bottom: -7px;
+    }
+}
+@media (max-width: 350px) {
+    #logo {
+        width: 200px;
+    }
+}
