@@ -281,14 +281,16 @@ h1 {
 
     .service-item {
         flex: 1 1 calc(50% - 1em); /* Two items per row */
-        padding: 6em 0;
+        padding-top: 0;
+        padding-bottom: 6em;
     }
 }
 
 @media (min-width: 1024px) {
     .service-item {
         flex: 1 1 calc(25% - 1em); /* Four items per row */
-        padding: 8em 0;
+        padding-top: 0;
+        padding-bottom: 8em;
     }
 
     .service-text {
