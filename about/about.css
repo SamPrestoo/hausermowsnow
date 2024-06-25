@@ -94,13 +94,6 @@ nav a {
     box-sizing: border-box;
 }
 
-.topUnderline {
-    width: 120px;
-    height: 5px;
-    background-color: black;
-    margin-bottom: 1em;
-}
-
 .text {
     width: 100%;
     display: flex;
@@ -282,5 +275,16 @@ footer a {
     .topUnderline {
         width: 100px;
         height: 4px;
+    }
+}
+@media (max-width: 450px) {
+    #logo {
+        width: 250px;
+        margin-bottom: -7px;
+    }
+}
+@media (max-width: 350px) {
+    #logo {
+        width: 200px;
     }
 }
