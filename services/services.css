@@ -11,7 +11,7 @@ nav {
     /* position: absolute; */
     width: 1927px;
     min-height: 80px;
-    background: linear-gradient(270deg, #52A93C 0%, rgba(106, 207, 80, 0.71) 100%);
+    background: white;
 
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@ nav a {
 .rightSide a:after {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: #002032;
     height: 3px;
     width: 0%;
     left: 0;
@@ -54,8 +54,8 @@ nav a {
     width: 100%;
 }
 nav a {
-    color: white;
-    font-size: 700;
+    color: #002032;;
+    font-weight: 700;
 }
 
 .hamburger {
@@ -69,7 +69,7 @@ nav a {
     margin: 5px auto;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    background-color: white;
+    background-color: #002032;
 }
 
 
