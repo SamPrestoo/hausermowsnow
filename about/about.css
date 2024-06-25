@@ -1,7 +1,4 @@
-html {
-    min-width: 100%;
-}
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather Sans', sans-serif;
@@ -10,13 +7,12 @@ body {
 }
 
 nav {
-    width: 100vw;
     min-height: 80px;
     background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1em;
+    padding-right: 1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -74,16 +70,17 @@ nav a {
 }
 
 .outerBox {
-    min-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em 0;
+    padding-bottom: 2em;
+    width: 100%;
 }
 
 .container {
     width: 85%;
     max-width: 1200px;
+    box-sizing: border-box;
 }
 
 .content {
@@ -92,6 +89,7 @@ nav a {
     align-items: center;
     margin-top: 2em;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .topUnderline {
@@ -128,39 +126,36 @@ nav a {
     margin: 0 auto;
 }
 
-
-
-
-
 footer {
-    width: 100vw;
+    width: 100%;
     background-color: black;
     color: white;
     padding: 1em 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
+
 footer a {
     text-decoration: underline;
     color: white;
 }
 
-.column1 {
-
+.column1, .column2, .column3 {
+    flex: 1 1 100%;
+    text-align: center;
 }
-.column2 {
 
-}
-.column3 {
-
-}
 .column3 span {
     margin-left: 5px;
 }
+
 .top {
     text-decoration: none;
 }
+
 .top:hover {
     cursor: pointer;
 }
@@ -169,6 +164,7 @@ footer a {
     color: rgb(199, 199, 199);
     font-size: .8em;
 }
+
 #copyright {
     color: rgb(199, 199, 199);
     font-size: .8em;
@@ -229,6 +225,7 @@ footer a {
     .content img {
         margin-top: 1em;
     }
+
     footer p {
         font-size: smaller;
     }
@@ -241,5 +238,10 @@ footer a {
 
     .text p {
         font-size: 0.9em;
+    }
+
+    .topUnderline {
+        width: 100px;
+        height: 4px;
     }
 }
