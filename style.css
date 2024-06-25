@@ -220,6 +220,7 @@ h1 {
 .services {
     width: 100%;
     padding: 2em 0;
+    padding-bottom: 0;
 }
 
 .services-container {
