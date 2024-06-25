@@ -559,7 +559,9 @@ h1 {
     box-sizing: border-box;
     position: relative;
 }
-
+.review-name {
+    margin-bottom: 0;
+}
 .review-content {
     margin: 0 auto;
     position: relative;
@@ -586,7 +588,7 @@ h1 {
 
 @media (max-width: 480px) {
     .testimonial {
-        max-width: 100%;
+        max-width: 95%;
         padding: 1em;
     }
 }
