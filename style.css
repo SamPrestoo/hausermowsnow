@@ -562,6 +562,7 @@ h1 {
 }
 .review-name {
     margin-bottom: 0;
+    color: #555;
 }
 .review-content {
     margin: 0 auto;
