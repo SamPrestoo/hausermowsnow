@@ -4,6 +4,7 @@ html, body {
     font-family: 'Merriweather Sans', sans-serif;
     width: 100%;
     overflow-x: hidden;
+    background-color: whitesmoke;
 }
 
 nav {
