@@ -50,7 +50,6 @@ nav {
     width: 1927px;
     min-height: 80px;
     background: white;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,7 +116,7 @@ nav a {
 main {
     background-image: url("images/mainimage.jpg");
     background-position: center -10px;
-    /* background-size: cover; */
+    background-size: cover;
     height: 90vh;
     display: flex;
     flex-direction: column;
