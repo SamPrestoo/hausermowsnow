@@ -85,6 +85,14 @@ main {
     padding: 1em;
     background: white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #002032;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.sidebar a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #002032;
 }
 .blog-post {
     position: relative;
@@ -170,7 +178,10 @@ footer a {
         padding: 0;
     }
     .sidebar {
-        width:100vw;
+        width:100%;
+    }
+    .sidebar-container {
+        margin: .75em;
     }
     .blog-column {
         justify-content: center;
