@@ -264,7 +264,7 @@ footer a {
         width: 36%;
     }
     #logo {
-        width: 200px;
+        width: 250px;
         margin-bottom: -7px;
     }
     .leftSide a {
@@ -288,6 +288,6 @@ footer a {
 
 @media (max-width: 350px) {
     #logo {
-        width: 150px;
+        width: 200px;
     }
 }
