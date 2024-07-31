@@ -95,6 +95,7 @@ nav a {
     width: 100%;
     max-width: 800px;
     text-align: left;
+    color: #002032;
 }
 
 .text h2 {
@@ -112,6 +113,9 @@ nav a {
     font-size: 1.15em;
     line-height: 1.45;
     color: rgb(68, 68, 68);
+}
+.blog_links {
+    font-weight: 700;
 }
 
 
