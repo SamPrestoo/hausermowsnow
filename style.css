@@ -307,6 +307,93 @@ h1 {
 }
 
 
+
+
+
+.detailed-services {
+    max-width: 1400px; /* Increased max-width for larger screens */
+    margin: 0 auto;
+    padding: 3em; /* Increased padding for larger screens */
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #333;
+}
+
+.detailed-services h2 {
+    font-size: 2.5em; /* Increased font size for larger screens */
+    margin-bottom: 1em;
+    color: #002032;
+    text-align: center;
+}
+
+.detailed-services h3 {
+    font-size: 1.8em; /* Increased font size for larger screens */
+    margin-top: 1.5em;
+    color: #002032;
+}
+
+.detailed-services p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.detailed-services ul {
+    margin-left: 1.5em;
+    list-style-type: disc;
+}
+
+.detailed-services ul li {
+    margin-bottom: 0.5em;
+}
+
+.detailed-services ul li strong {
+    color: #002032;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .detailed-services {
+        max-width: 90%; /* Adjusted max-width for medium screens */
+        padding: 2em; /* Adjusted padding for medium screens */
+    }
+
+    .detailed-services h2 {
+        font-size: 2em; /* Adjusted font size for medium screens */
+    }
+
+    .detailed-services h3 {
+        font-size: 1.5em; /* Adjusted font size for medium screens */
+    }
+
+    .detailed-services p, .detailed-services ul li {
+        font-size: 1em; /* Adjusted font size for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .detailed-services {
+        max-width: 95%; /* Adjusted max-width for small screens */
+        padding: 1em; /* Adjusted padding for small screens */
+    }
+
+    .detailed-services h2 {
+        font-size: 1.5em; /* Adjusted font size for small screens */
+    }
+
+    .detailed-services h3 {
+        font-size: 1.2em; /* Adjusted font size for small screens */
+    }
+
+    .detailed-services p, .detailed-services ul li {
+        font-size: 0.9em; /* Adjusted font size for small screens */
+    }
+}
+
+
+
+
 .gallery {
     width: 100%;
     background-color: white;
