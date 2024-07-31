@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Merriweather Sans', sans-serif;
     width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
     background-color: whitesmoke;
 }
