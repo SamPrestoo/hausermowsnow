@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Homepage -->
     <url>
-        <loc>https://www.hausermowandsnow.com/</loc>
+        <loc>https://www.hausermowandsnow.com</loc>
         <lastmod>2024-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -10,7 +10,7 @@
     
     <!-- Services Page -->
     <url>
-        <loc>https://www.hausermowandsnow.com/services</loc>
+        <loc>https://www.hausermowandsnow.com/services/services.html</loc>
         <lastmod>2024-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -18,15 +18,7 @@
     
     <!-- About Us Page -->
     <url>
-        <loc>https://www.hausermowandsnow.com/about</loc>
-        <lastmod>2024-07-29</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <!-- Contact Page -->
-    <url>
-        <loc>https://www.hausermowandsnow.com/contact</loc>
+        <loc>https://www.hausermowandsnow.com/about/about.html</loc>
         <lastmod>2024-07-29</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
@@ -34,7 +26,7 @@
     
     <!-- Blog Page -->
     <url>
-        <loc>https://www.hausermowandsnow.com/blog</loc>
+        <loc>https://www.hausermowandsnow.com/blog/blog_homepage.html</loc>
         <lastmod>2024-07-29</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
@@ -42,7 +34,7 @@
     
     <!-- Example Blog Post -->
     <url>
-        <loc>https://www.hausermowandsnow.com/blog/example-post</loc>
+        <loc>https://www.hausermowandsnow.com/blog/blog_archive/fall_2024.html</loc>
         <lastmod>2024-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
