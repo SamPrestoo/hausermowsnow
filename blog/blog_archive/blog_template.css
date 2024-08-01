@@ -17,7 +17,7 @@ nav {
     justify-content: space-between;
 }
 #logo {
-    width: 250px;
+    width: 350px;
     margin-top: 2px;
 }
 .leftSide a {
@@ -259,7 +259,7 @@ footer a {
     }
 
     #logo {
-        width: 200px;
+        width: 250px;
         margin-bottom: -7px;
     }
 
@@ -291,7 +291,7 @@ footer a {
 
 @media (max-width: 350px) {
     #logo {
-        width: 150px;
+        width: 200px;
     }
 }
 @media (max-width: 330px) {
