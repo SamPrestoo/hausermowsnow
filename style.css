@@ -119,7 +119,6 @@ nav a {
 
 main {
     background-image: url("images/mainimage.jpg");
-    
     background-position: center -10px;
     background-size: cover;
     height: 90vh;
@@ -129,12 +128,10 @@ main {
     justify-content: center;
     /* justify-content: flex-start; */
 }
-#lazy-load {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
 #lazy-load.loaded {
-    opacity: 1;
+    background-image: url("images/mainimage.jpg");
+    background-position: center -10px;
+    background-size: cover;
 }
 h1 {
     color: white;
