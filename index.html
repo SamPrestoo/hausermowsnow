@@ -111,25 +111,6 @@
             <div class="quote-container">Get a Free Quote</div>
         </a>
     </main>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const lazyLoadElement = document.getElementById('lazy-load');
-        if ('IntersectionObserver' in window) {
-            let observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        lazyLoadElement.classList.add('loaded');
-                        observer.disconnect();
-                    }
-                });
-            });
-            observer.observe(lazyLoadElement);
-        } else {
-            lazyLoadElement.classList.add('loaded');
-        }
-    });
-    </script>
-    
 
 
     <!-- this is for js slide -->
