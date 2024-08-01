@@ -1,16 +1,17 @@
 {
-  "error_pages": {
-    "404": "/404.html"
-  },
-  "headers": {
-    "/images/*": {
-      "Cache-Control": "max-age=31536000"
+    "error_pages": {
+      "404": "/404.html"
     },
-    "/css/*": {
-      "Cache-Control": "max-age=31536000"
-    },
-    "/js/*": {
-      "Cache-Control": "max-age=31536000"
+    "headers": {
+      "/style.css": {
+        "Cache-Control": "max-age=31536000"
+      },
+      "/app.js": {
+        "Cache-Control": "max-age=31536000"
+      },
+      "/images/*": {
+        "Cache-Control": "max-age=31536000"
+      }
     }
   }
-}
+  
