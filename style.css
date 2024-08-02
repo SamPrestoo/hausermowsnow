@@ -118,15 +118,24 @@ nav a {
 
 
 main {
-    /* background-image: url("images/mainimage.webp"); */
-    background-position: center -10px;
-    background-size: cover;
-    height: 90vh;
+    position: relative;  /* Ensure the main element can position its children */
+    height: 90vh;  /* Keep the height fixed */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;  /* Hide overflow content */
 }
+main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure the image covers the main element without distortion */
+    z-index: -1;  /* Ensure the image stays behind the content */
+}
+
 
 #lazy-load.loaded {
     background-image: url("images/mainimage.jpg");
@@ -139,10 +148,10 @@ h1 {
     text-align: center;
     line-height: 1.5;
     font-size: 4em;
-    /* letter-spacing: 4px; */
     text-shadow: 6px 6px 0px rgba(0,0,0,0.4);
-    position: relative; /* Ensures the h1 text appears above the image */
+    position: relative;  /* Ensure the h1 text appears above the image */
 }
+
 
 .get-quote {
     box-shadow: none;
