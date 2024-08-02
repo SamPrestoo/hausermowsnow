@@ -267,8 +267,8 @@
                     const button = document.createElement('button');
                     button.className = `gallery-controls-${control}`;
                     button.innerHTML = control === 'previous' ? 
-                        '<i class="fas fa-chevron-left"></i>' : 
-                        '<i class="fas fa-chevron-right"></i>';
+                        '<p>&larr;</p>' : 
+                        '<p>&rarr;</p>';
                     galleryControlsContainer.appendChild(button);
                 });
             }
