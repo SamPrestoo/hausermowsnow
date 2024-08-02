@@ -1151,8 +1151,9 @@ footer a {
     }
     h1 {
         font-size: 1.5em; /* Adjust font size for very small screens */
+        margin-top: 2.5em;
     }
     .get-quote {
-        margin-bottom: 1em;
+        margin-bottom: 2.5em;
 }
 
