@@ -126,7 +126,8 @@ main {
     justify-content: center;
     overflow: hidden;  /* Hide overflow content */
 }
-main img {
+
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -136,12 +137,6 @@ main img {
     z-index: -1;  /* Ensure the image stays behind the content */
 }
 
-
-#lazy-load.loaded {
-    background-image: url("images/mainimage.jpg");
-    background-position: center -10px;
-    background-size: cover;
-}
 h1 {
     color: white;
     max-width: 700px;
@@ -150,6 +145,14 @@ h1 {
     font-size: 4em;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.4);
     position: relative;  /* Ensure the h1 text appears above the image */
+}
+
+
+
+#lazy-load.loaded {
+    background-image: url("images/mainimage.jpg");
+    background-position: center -10px;
+    background-size: cover;
 }
 
 
