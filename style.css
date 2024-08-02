@@ -526,13 +526,13 @@ h1 {
     content: '';
 }
 
-.gallery-controls-previous i, .gallery-controls-next i {
+.gallery-controls-previous p, .gallery-controls-next p {
     font-size: 24px;
     color: #000;
     transition: color 0.3s ease-in-out;
 }
 
-.gallery-controls-previous:hover i, .gallery-controls-next:hover i {
+.gallery-controls-previous:hover p, .gallery-controls-next:hover p {
     color: #555;
 }
 
