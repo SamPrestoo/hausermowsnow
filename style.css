@@ -300,6 +300,13 @@ h1 {
 
 /* Styles for larger screens */
 @media (min-width: 768px) {
+    main {
+        height: 60vh;  /* Reduce the height on smaller screens */
+    }
+    h1 {
+        margin-top: 1em;
+        font-size: 3em;  /* Adjust font size for smaller screens */
+    }
     .services-container {
         flex-wrap: nowrap; /* Ensure the items don't wrap */
     }
@@ -405,6 +412,12 @@ h1 {
 
     .detailed-services p, .detailed-services ul li {
         font-size: 0.9em; /* Adjusted font size for small screens */
+    }
+    main {
+        height: 50vh;  /* Further reduce the height on very small screens */
+    }
+    h1 {
+        font-size: 2em;  /* Adjust font size for very small screens */
     }
 }
 
@@ -968,9 +981,6 @@ footer a {
         background-color: rgba(255, 255, 255, 0.96);
         left: 0;
         padding: 0;
-    }
-    h1 {
-        margin-top: 1em;
     }
 
 }
