@@ -414,7 +414,7 @@ h1 {
         font-size: 0.9em; /* Adjusted font size for small screens */
     }
     main {
-        height: 75vh;  /* Further reduce the height on very small screens */
+        height: 85vh;  /* Further reduce the height on very small screens */
     }
     h1 {
         font-size: 2em;  /* Adjust font size for very small screens */
