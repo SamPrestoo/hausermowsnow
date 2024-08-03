@@ -1,1 +1,9 @@
+# Prevent all web crawlers from accessing any part of the website
 User-agent: *
+Disallow:
+
+# Block access to specific directories
+Disallow: /images/
+
+# Sitemap location
+Sitemap: https://hausermowsnowllc.com/sitemap.xml
